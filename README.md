@@ -177,8 +177,7 @@ output, and learning parameters:
 An intersection_over_union(iou) score is used as a metric for validation of the
 model. It is a value that means a ratio of area of intersection between
 predicted segment and true segment to all area of two sectors. For more details,
-see the source:
-<https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/>
+see the source[13].
 
 ## 2.5 Results
 
@@ -203,13 +202,14 @@ different from lost - that is the reason for the drop. That problem can be
 solved by data relabeling.
 
 However, the model was not changed and still works fine. You can see it on the
-demonstration).
+demonstration.
 
 ## 2.6 Demonstration
 
 You can watch a short demonstration video of how the model detects
-segments(**Scene detection(demo).mp4**). It can be found in the folder with
-report.
+segments(**Scene detection(demo).mp4**) and see the corresponding notebook
+(**Demo_scene_detection.ipynb**). Video and notebook both can be found here:
+**demos/Scene detection(screen segmentation)**.
 
 ## 2.7 Conclusion
 
@@ -283,7 +283,7 @@ bright text on dark background. That's an example of images after preprocessing:
 As mentioned earlier, Tesseract 5.0.0 is a text extraction utility used for
 solving the problem. The model inside it is an LSTM(Long-Short Time Memory)
 Neural Network. For more information about architecture and work principles, see
-the sources.
+the sources[7,8,9].
 
 ## 3.5 Metric
 
@@ -363,7 +363,7 @@ symbols from score and stat images. As the learning process finished, we have
 got a special .traineddata file that contains information about custom font
 formed from .lstmf files after the learning process.
 
-For more information about LSTM training process, see the link:
+For more information about LSTM training process, see the source[11].
 
 ## 3.8 Second validation of the model
 
@@ -430,7 +430,7 @@ font. Without this correction, the model confuses symbol “J” with symbol “
 more often).
 
 For more information about text generation and preparing the model for training
-on fonts, see the sources.
+on fonts, see the source[12].
 
 ## 3.10 Validation of additionally trained model
 
@@ -490,7 +490,8 @@ perform additional model training on such images.
 
 You can see the demonstration of text extraction in video
 
-(**Text extraction(demo).mp4**)
+(**Text extraction(demo).mp4**) and corresponding notebook(**Demo_text_extraction.ipynb**).
+Video and notebook both can be found here: **demos/Text extraction**
 
 # The list of sources
 
@@ -522,16 +523,8 @@ You can see the demonstration of text extraction in video
 
 14. https://keras.io/api/preprocessing/image/
 
-15. https://computersciencewiki.org/index.php/Feature_maps_(Activation_maps)
+15. https://towardsdatascience.com/u-net-b229b32b4a71
 
-16. https://neurohive.io/en/popular-networks/resnet/
+16. https://github.com/adminsolvve/ml_course/blob/master/optimization_algorithms/Optimization%20methods.ipynb
 
-17. https://arxiv.org/abs/1505.04597
-
-18. https://towardsdatascience.com/u-net-b229b32b4a71
-
-19. https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/
-
-20. https://github.com/adminsolvve/ml_course/blob/master/optimization_algorithms/Optimization%20methods.ipynb
-
-21. https://en.wikipedia.org/wiki/Jaccard_index
+17. https://en.wikipedia.org/wiki/Jaccard_index
